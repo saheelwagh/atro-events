@@ -57,3 +57,4 @@ In Astro, an “island” refers to any interactive UI component on the page. Th
 An island always runs in isolation from other islands on the page, and multiple islands can exist on a page. Islands can still share state and communicate with each other, even though they run in different component contexts.
 
 
+check astro.new for templates
