@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Main from "../components/Main.astro";
+import H1 from "../components/H1.astro";
+import { getCollection } from "astro:content";
+const posts = await getCollection("posts");
+console.log(posts)
+---
+<Layout title="Rhythm nation blog">
+	<Main>
+		<!-- TODO download extension for bracket editing -->
+		<H1 text='Rhythm Nation'/>
+        {posts.map(post=>{
+            <h2>{post.data.title}</h2>
+        })}
+	</Main>
+	
+</Layout>
